@@ -1,0 +1,38 @@
+,,,,,,
+,Nombre,,,,ID´s,
+,Cliente_Particulares_Anonimo,,,,C0,
+,Cliente_Particulares_Delegado_RedSocial,,,,C1,
+,Cliente_Particulares_BBVA_CA,,,,C2,
+,Cliente_Particulares_BBVA_TSA,,,,C3,
+,Cliente_Particulares_BBVA_ALTO_OTP,,,,C4,
+,Cliente_Particulares_BBVA_ALTO_TSA,,,,C5,
+,Cliente_Particulares_Firma_Basica_CA,,,,C6,
+,Cliente_Particulares_Firma_Avanzada_OTP,,,,C7,
+,Cliente_Particulares_Firma_Avanzada_CA,,,,C8,
+,Cliente_Particulares_BBVA_DNIe,,,,C9,
+,Cliente_Particulares_BBVA_ALTO_DNIe,,,,C10,
+,Cliente_Particulares_Firma_Basica_DNIe,,,,C11,
+,Cliente_Particulares_Firma_Avanzada_DNIe,,,,C12,
+,Cliente_Particulares_Personalizado_IdPersonaliz.,,,,C13,
+,Cliente_Particulares_Personalizado_DNIe,,,,C14,
+,Cliente_Particulares_Personalizado_CA,,,,C15,
+,Cliente_Particulares_Personalizado_TSA,,,,C16,
+,Cliente_Particulares_Personalizado_RedSocial,,,,C17,
+,Cliente_Particulares_Delegado_DNIe,,,,C18,
+,Cliente_Particulares_Delegado_CA,,,,C19,
+,Cliente_Particulares_Firma_Anonima_Anonimo,,,,C20,
+,Cliente_Particulares_Refresco_CA,,,,C21,
+,Cliente_Particulares_BBVA_Confiables_CA,,,,C22,
+,Cliente_Particulares_BBVA_Confiables_TSA,,,,C23,
+,Cliente_Particulares_BBVA_Confiables_DNIe,,,,C24,
+,Cliente_Particulares_Enrollment,,,,C25,
+,Cliente_Particulares_Firma_Enrollment,,,,C26,
+,Cliente_Particulares_Personalizado_PreBBVA,,,,C27,NEW Mx
+,Cliente_Particulares_PreBBVA_CA,,,,C28,NEW Mx
+,Cliente_Particulares_Olvido_MX,,,,C29,NEW Mx
+,Cliente_Particulares_Enroll_MX,,,,C30,NEW Mx
+,Cliente_Particulares_Firma_Olvido,,,,C31,NEW Mx
+,Cliente_Particulares_Firma_PreBBVA,,,,C32,NEW Mx
+,Cliente_Particulares_Firma_Superior_CO_OTP,,,,C33,NEW CO
+,Cliente_Particulares_AntibotPermanente,,,,C34,
+,Cliente_Particulares_Firma_Antibot,,,,C35,
