@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 **/target
 **/.idea
+=======
+node_modules/
+
+>>>>>>> 9d3024992e60649baea2a3172cc51c76836df87a
