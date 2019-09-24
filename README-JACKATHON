@@ -1,0 +1,280 @@
+Hackathon Ninja España 2019
+Konnichiwa!!
+
+Bienvenidos al Hackathon Ninja España 2019.
+
+El reto para este Hackathon consiste en desarrollar la aplicación que mejor combine el uso de las siguientes tecnologías:
+
+Servicios ASO
+Cells
+Google Cloud Platform
+El desarrollo de la aplicación empezará a las 11:15 del miércoles 25 de Septiembre y finalizará a las 09:00 del viernes 27, en la que comenzará la evaluación de las aplicaciones por parte de los jurados.
+
+Se ha creado la siguiente cuenta de Google para tu proyecto en el Hackathon desde la que podrás desplegar la aplicación y utilizar los servicios de la plataforma.
+
+Documentación Servicios ASO
+En los siguientes links puedes encontrar información sobre qué es ASO y cómo consumir sus servicios:
+
+Services Architecture - How to consume a service
+What is ASO?
+ASO Services invocation
+grantingTicket
+Normalmente para poder consumir los servicios ASO, previamente se ha de obtener un token de seguridad tsec que será enviado mediante cabecera en las subsiguientes peticiones.
+
+Para facilitar el desarrollo de las aplicaciones en el Hackathon, se ha eliminado la necesidad de obtener el grantingTicket, por lo que se podrá consultar los servicios ASO sin tener que pasar el token de seguridad tsec
+
+Datos de Usuarios, Documentos de Identidad y customerID facilitados por el equipo de ASO
+A continuación se muestran los usuarios con su password de acceso, documentos de identidad y customerIDs disponibles en el juego de datos de la aplicación así como cuentas, tarjetas, planes de pensiones y depósitos
+
+Usuario	Password	Documento de Identidad	customerID
+0019-088500281F	123456	088500281F	ES0182000002510C
+0019-097486620Q	123456	097486620Q	ES0182100297643C
+0019-043243582V	123456	043243582V	ES0182100304394C
+0019-059959494N	123456	059959494N	ES0182003326405C
+0019-006061982X	123456	006061982X	ES0182099808332C
+0019-000943023T	123456	000943023T	ES0182001353883C
+0019-000001670Z	123456	000001670Z	ES0182099831631C
+0019-071799137Z	123456	071799137Z	ES0182020340130C
+0019-034565517J	123456	034565517J	ES0182000000309C
+0019-017878242C	123456	017878242C	ES0182000000095C
+0019-012345678Z	123456	012345678Z	ES0182099811103C
+0019-046757760W	123456	046757760W	ES0182099809129C
+0019-000002674Y	123456	000002674Y	ES0182099858041C
+0019-036441236J	123456	036441236J	ES0182004142958C
+0019-000002047T	123456	000002047T	ES0182100155478C
+0019-079819303B	123456	079819303B	ES0182000005678C
+0019-042517874M	123456	042517874M	ES0182099836784C
+0019-007975048M	123456	007975048M	ES0182100056428C
+0019-000001025J	123456	000001025J	ES0182099809471C
+Cliente	Cuenta EUR Saldo	Tarjeta Crédito
+062309323T	01822200160201571028	377618000521587
+062309323T	01822200160201571028	377618000521595
+Cliente	Cuenta EUR Saldo	Tarjeta Prepago
+036239968H	01820516120208001201	4539730052094293
+006636306R	01824000680201866739	5525480001140309
+Cliente	Cuenta Divisa Saldo	Tarjeta Crédito
+017729054X	01824000612013591032	4343580000258441
+017729054X	01824000612013591032	4552232365087975
+Cliente	Cuenta Divisa Saldo	Tarjeta Prepago
+000068831S	01821128542012506033	4539730052093121
+000061616E	01824000682013662039	4918500122054333
+Cliente	Cuenta Crédito EUR Saldo	Tarjeta Crédito
+X7082493B	01825886250101500046	4343580000241983
+090232238H	01822200190101505596	4940116134668895
+Cliente	Cuenta Crédito EUR Saldo	Tarjeta Prepago
+036239968H	01824000600105044327	4539730052094293
+007252098Z	01821300160100000346	4035690007064313
+Cliente	Cuenta Crédito Divisa Saldo	Tarjeta Crédito
+049315809Z	01824000672102509197	4940005064200318
+Cliente	Cuenta Crédito Divisa Saldo	Tarjeta Prepago
+049315809Z	01824000672102509197	5525480000227313
+Cliente	Tarjeta Crédito	Tarjeta Crédito
+062309323T	4343570001813781	377618000521587
+016798079Y	4940116134666642	4940116134666634
+Cliente	Cuenta Crédito EUR Saldo	Tarjeta Dédito
+036239968H	01820516120208001201	5181760009847160
+036239968H	01820516120208001201	4539730052094293
+Cliente	Tarjeta Prepago	Tarjeta Prepago
+006636306R	5525480001140309	4539730052092479
+001202642H	4539730052093113	4539730052092123
+Cliente	Cuenta Crédito EUR Saldo	Tarjeta Wallet
+006636306R	01823815370200085402	4035690007064073
+006636306R	01823815370200085402	4035690007064073
+Cliente	Tarjeta Wallet	Tarjeta HCE
+021508831J	4035690007064099	4273380001922523
+050425687G	4035690007064230	4273380000005049
+Cliente	Cuenta Crédito EUR Saldo	Plan Pensiones
+036239968H	01820516120208001201	0182 2200 0800 00000007490767
+006636306R	01823815370200085402	0182 6984 0800 00000005022987
+Cliente	Cuenta Crédito EUR Saldo	Depósitos
+036239968H	01820516120208001201	0182 2200 0041 00000000166137
+069242775X	01820171820200009361	0182 9051 0041 00000000222663
+Hoja excel de ejemplo de peticiones
+En el fichero ejemploPeticiones se encuentra una hoja de cálculo con un listado de ejemplos de peticiones a los servicios de ASO con los query paramenters necesarios, etc.
+
+Página de testing usuarios, tarjetas,...
+Mediante la página https://s3-dev.movil.bbva.es/ei/develop/apps/woody/index.html#/ se pueden efectuar comprobaciones sobre los datos de los usuarios, cuentas, tarjetas...
+
+Listado servicios ASO disponibles para el Hackathon
+Funcionalidad	Endpoint	RegistryId	LogicalId	¿API Catalog o Local?
+Posición Global Banca Móvil (Posiciones, Contadores, PFM, Agregador y Productos no financieros)	https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/contextualData/V02/<customerID>	SMC201800028	getUserContextualData	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/financialDashBoard/V03	SMC201700569	getFinancialDashBoard	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/productCustomization/V01	SMC201600311	createProductCustomization	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/productCustomization/V01	SMC201600312	listProductCustomization	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/pfmCustomization/V01	SMC201600567	createPfmCustomization	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/pfmCustomization/V01	SMC201600568	listProductCustomization	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/messageThreads/V01	SMC201400306	listMessageThreads	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/customerAppointments/V01	SMC201500148	listCustomerAppointments	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/branches/V01/virtualTickets	SMC201500952	listBranchVirtualTickets	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/announcements/V01	SMC201400459	listannouncements	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/financialProductCustomization/V01	SMC201700471	getFinancialProductCustomization	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/non-financial-services/v0/non-financial-services	SMC201800411	createCustomerNonFinancialRelation	Catálogo
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/financialAggregatorConnections/V01	SMC201700966	createFinancialAggregatorConnection	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/customers/V01/<client>/listCustomerProductLimits	SMC201400315	listCustomerProductLimits	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/financialAggregatorConnections/V01	SMC201800086	listFinancialAggregatorConnection	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/campaigns/v0/crm-offers/search	SMC201800478	searchCRMOffers	Catálogo
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/financialAggregatorDashBoards/V02	SMC201800502	getFinancialAggregatorDashBoards	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/retail-financial-aggregator/v0/aggregation-provider-contracts	SMC201800529	createFinancialAggregatorConfiguration	Catálogo
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/contracts/v0/financial-investment/summaries	SMC201800230	getSummaries	Catálogo
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/transactionActions/V01/financialManagementBasicCategorization	SMC201700124	getFinancialManagementBasicCategorization	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/customerHomeCenter/V01/<client>/homeCenter/	SMC201600388	listCustomerHomeCenter	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/accountTransactions/V02/updateAccountTransactions	SMC201700713	updateAccountTransactions	Local
+Cuentas	https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/accountTransactions/V02/accountTransactionsAdvancedSearch	SMC201700489	accountTransactionsAdvancedSearch	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/contracts/V01	SMC201400257	listContracts	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/contracts/V01/<account>/participants/	SMC201400258	listContractParticipants	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/contracts/v0/<account>/addresses	SMC201910043	listContractsAddress	Catálogo
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/contracts/V01/<account>/documents/	SMC201500999	listContractDocuments	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/accounts/V01/<account>/retentions	SMC201500464	listAccountRetentions	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/estimatedTransactions/V01/financialManagementView	SMC201500938	listEstimatedTransactionsFinancialManagementView	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/transactions/V01/interfac	SMC201500581	getTransactionInterface	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/wireTransferOrders/V01	SMC201500151	listWireTransferOrders	Local
+Tarjetas	https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/cards/V01	SMC201600576	createCard	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/contracts/V01/<card>/participants	SMC201400258	listContractParticipants	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/cardTransactions/V01/listIntegratedCardTransactions	SMC201600182	listIntegratedCardTransactions	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/contracts/v0/<card>/addresses	SMC201910043	listContractsAddress	Catálogo
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/contracts/V01/<card>/documents/	SMC201500999	listContractDocuments	Local
+PFM (Categorización, movimientos previstos, bibot, salud financiera y comparativas demográficas)	https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/transactionActions/V01/financialManagementCategorization	SMC201800567	getFinancialManagementCategorization	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/customerBudgets/V01/?customerId=<client>	SMC201500417	listCustomerBudgets	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/estimatedTransactions/V01/financialManagementView/	SMC201500938	listEstimatedTransactionsFinancialManagementView	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/wireTransferActions/V02/listWireTransfers	SMC201700833	listWireTransfers	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/cardTransactions/V01/listIntegratedCardTransactions	SMC201600182	listIntegratedCardTransactions	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/transactionActions/V02/financialManagementReport	SMC201800609	getFinancialManagementReport	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/accountTransactions/V02/accountTransactionsAdvancedSearch	SMC201500296	accountTransactionsAdvancedSearch	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/expenseDistributionCustomizations/V01/?customerId=<client>	SMC201700489	getExpenseDistributionCustomizations	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/financial-health/v0/financial-health-positions?customerId=<client>	SMC201810203	getFinancialHealthPositions	Catálogo
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/transactions/V01/financialManagementView	SMC201500277	listTransactionsFinancialManagement	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/financialAggregatorAccountTransactions/V01	SMC201800000	listFinancialAggregatorAccountTransactions	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/featureCustomizations/V01/?customerId=<client>	SMC201700844	listFeatureCustomizations	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/customers/V01/<client>/addresses/	SMC201500008	listCustomerAddresses	Local
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/demographicProfileInformation/V01/getAggregationDemographicProfileInformation	SMC201701023	getAggregationDemographicProfileInformation	Local
+Mi buzón / Correspondencia virtual	https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/notifications/v0/categories?customer.id=<client>	SMC201800989	listNotificationCategories	Catálogo
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/notifications/v0/pushes	SMC201801052	listPushes	Catálogo
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/notifications/v0/virtual-mails	SMC201800814	listIntegratedVirtualMails	Catálogo
+https://ei-gateway.bbvaportalapis.es/serviceVirtualization/ASO/bankingVirtualMails/V02	SMC201400433	getBankingVirtualMail	Local
+Documentación Cells
+La documentación sobre Cells puede encontrarse en el siguiente enlace What is Cells
+
+Documentación y ejemplos de Google Cloud
+La documentación sobre Google Cloud se encuentra en el siguiente enlace Google Cloud
+
+Puede resultar interesante el uso de Google Cloud Shell en el desarrollo de las aplicaciones del Hackathon. Puedes consultar el siguiente link para Activar Google Cloud Shell.
+
+En caso de desarrollar la aplicacion utilizando Cells, existe una VM específica para Cells que se puede asociar a la shell de google.
+
+Para habilitarla es necesario modificar el Entorno de Cloud Shell. Podéis modificar la VM siguiendo los pasos de este Codelabs desde el punto 6. Navegando a la página Entorno de Cloud Shell y haciendo click en Editar, podréis seleccionar la nueva imagen. La ruta que debéis proporcionar para cambiar la imagen es gcr.io/bbva-cells-cloud-shell-poc/bbva-cloud-shell-cells-image:latest (el proceso de aplicar la nueva imagen tarda bastante la primera vez).
+
+Una vez instalada la VM de Cells, seguid los pasos que se indican en la propia shell : NPM configuration
+
+Por último no olvidéis establecer en vuestro entorno Google Cloud Shell las credenciales de Bitbucket, etc.
+
+Algunos servicios de Google interesantes para utilizar en el Hackathon pueden ser:
+BigQuery
+BigQuery es el almacén de datos de estadísticas completamente administrado, de bajo coste y con escala de petabytes de Google. BigQuery es NoOps: no se debe administrar ninguna infraestructura y no necesitas un administrador de base de datos, de manera que puedes enfocarte en el análisis de datos
+
+Tenéis toda la documentación aquí: BigQuery
+
+AutoML
+AutoML te permite crear tus propios modelos de aprendizaje automático personalizados con una interfaz gráfica fácil de usar, sin necesidad de programar.
+
+Visión	AutoML Vision	AutoML Video Intelligence
+Extrae información valiosa de imágenes en la nube o en el perímetro.	Descubre contenido y accede a experiencias de vídeo atractivas eficazmente.	
+Lenguaje	AutoML Natural Language	AutoML Translation
+Analiza la estructura y el significado de los textos mediante el aprendizaje automático.	Detecta y traduce textos de manera dinámica.	
+Datos estructurados	AutoMLTables	
+Crea y despliega automáticamente modelos de aprendizaje automático de última generación sobre datos estructurados.	
+Tenéis toda la documentación aquí: AutoML
+
+ML APIs
+Teneis toda la documentación aquí: ML APIs
+
+Soluciones básicas de IA
+Cloud Vision Reconocimiento y clasificación de imágenes
+
+Cloud Video Intelligence Anotación de vídeo a nivel de escena
+
+Cloud Natural Language Análisis de textos
+
+Cloud Translation Traducción y detección de idioma
+
+Cloud Speech-To-Text Conversión de voz a texto
+
+Cloud Text-To-Speech Conversión de texto a voz
+
+Dialogflow Enterprise Edition Interfaces de usuario conversacionales
+
+API Cloud Inference API para realizar correlaciones a gran escala
+
+DialogFlow Docs
+Dialogflow es una plataforma con comprensión del lenguaje natural que te facilita el diseño de una interfaz de usuario de conversación y su integración a tu aplicación para dispositivos móviles, aplicación web, dispositivos tipo Google Home, bots y sistema de respuesta de voz interactiva.
+
+Tenéis toda la documentación aquí: DialogFlow
+
+GKE Docs
+GKE :Gestión a escala de aplicaciones en contenedores
+
+Kubernetes Engine es un entorno gestionado listo para la fase de producción que se ha diseñado para desplegar aplicaciones en contenedores. Esta solución incorpora nuestras últimas innovaciones en cuanto a productividad para desarrolladores, eficiencia de recursos y operaciones automatizadas, junto con la flexibilidad del código abierto, para que reduzcas el tiempo de lanzamiento.
+
+Tenéis toda la documentación aquí: Kubernetes
+
+Dataproc
+Cloud Dataproc es un servicio Apache Spark y Apache Hadoop administrado con el que puedes aprovechar las herramientas de código abierto para procesar, consultar y transmitir datos en lote, además de herramientas de aprendizaje automático
+
+Tenéis toda la documentación aquí: Dataproc
+
+Criterios de evaluación Hackathon España 2019
+Técnico (40%)
+Calidad de código
+
+Uso idiomático del lenguaje
+Usar paradigma elegido correctamente (Orientación a objetos, funcional, procedural)
+En OOP SOLID, en funcional Higher Order Functions, etc.
+DRY (Don’t Repeat yourself)
+YAGNI (You ain’t gonna need it)
+KISS no KISC (Keep it simple s.., no Keep it stupidly complex)
+Modularidad
+
+Bajo acoplamiento
+Alta cohesión
+Buena elección de la arquitectura
+Responsabilidad clara
+Responsabilidad única
+Código limpio
+
+Métodos/funciones pequeñas
+Legibilidad del código (nombres)
+ATDD/TDD (Test Driven Development)
+Que las funcionalidades desarrolladas funcionen correctamente
+
+Grado de utilización de Cells
+
+Interoperabilidad
+
+Viabilidad de integración posterior de la pieza construida
+Modelo sostenible
+
+Tanto en coste como en sostenibilidad
+Orientación al cliente (40%)
+Problema o necesidad de cliente que se pretende resolver con la aplicación propuesta
+
+Se presenta una solución útil para el cliente
+Solución propuesta
+
+Se entiende como se ha solucionado el problema, a nivel funcional y técnico
+Ajuste de la idea a la temática propuesta
+
+La idea se ajusta al tema del hackathon
+El tamaño de la idea está ajustado al tiempo y skill de los que dispone el equipo
+
+Se presenta un desarrollo completo, sin partes no desarrolladas debido a que no se cuenta con skills necesarios
+Que la demostración funcione
+
+La aplicación que presenta el equipo realiza correctamente las funciones expuestas
+Comunicación (20%)
+Los 4 participantes están involucrados en la presentación final
+
+Maestría a la hora de transmitir los mensajes principales
+
+Se entiende cuál es la idea y cuál es su valor para el negocio. Y saben transmitirlo a todo tipo de públicos técnicos o no
+Uso del tiempo durante la presentación
+
+La presentación se ajusta a los 10 min que tiene establecidos.
